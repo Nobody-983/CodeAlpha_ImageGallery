@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-slate-100 min-h-screen">
+
+  <section class="max-w-7xl mx-auto px-4 py-10">
+
+    
+    <div class="text-center mb-10">
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-800">
+        Image Gallery
+      </h1>
+
+      <p class="text-slate-500 mt-2">
+        Filter images by category
+      </p>
+    </div>
+
+    <!-- category button -->
+    <div class="flex flex-wrap justify-center gap-4 mb-10">
+
+      <button
+        id="allBtn"
+        class="px-5 py-2 border-2 border-black rounded-lg cursor-pointer transition-all duration-300 hover:bg-black hover:text-white hover:scale-105"
+      >
+        All
+      </button>
+
+      <button
+        id="natureBtn"
+        class="px-5 py-2 border-2 border-green-600 text-green-600 rounded-lg cursor-pointer transition-all duration-300 hover:bg-green-600 hover:text-white hover:scale-105"
+      >
+        Nature
+      </button>
+
+      <button
+        id="carBtn"
+        class="px-5 py-2 border-2 border-blue-600 text-blue-600 rounded-lg cursor-pointer transition-all duration-300 hover:bg-blue-600 hover:text-white hover:scale-105"
+      >
+        Cars
+      </button>
+
+      <button
+        id="foodBtn"
+        class="px-5 py-2 border-2 border-orange-500 text-orange-500 rounded-lg cursor-pointer transition-all duration-300 hover:bg-orange-500 hover:text-white hover:scale-105"
+      >
+        Food
+      </button>
+
+    </div>
+
+    <!-- Gallery -->
+    <div
+      id="gallery"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+    >
+
+      <!-- Nature -->
+      <img src="./images/nature/sunny.jpeg" class="img nature" alt="Nature">
+      <img src="./images/nature/chill.jpeg" class="img nature" alt="Nature">
+      <img src="./images/nature/resort.jpeg" class="img nature" alt="Nature">
+      <img src="./images/nature/mountain.jpeg" class="img nature" alt="Nature">
+
+      <!-- Cars -->
+      <img src="./images/car/BMW.jpeg" class="img car" alt="BMW">
+      <img src="./images/car/Hyundai.jpeg" class="img car" alt="Hyundai">
+      <img src="./images/car/posh.jpeg" class="img car" alt="Car">
+      <img src="./images/car/rangerover.jpeg" class="img car" alt="Range Rover">
+
+      <!-- Food -->
+      <img src="./images/food/Breakie.jpeg" class="img food" alt="Breakfast">
+      <img src="./images/food/burger.jpeg" class="img food" alt="Burger">
+      <img src="./images/food/jollof rice.jpeg" class="img food" alt="Jollof Rice">
+      <img src="./images/food/fries.jpeg" class="img food" alt="Fries">
+
+    </div>
+
+    <!-- for removing next and previous button -->
+    <div class="flex md:hidden justify-center gap-4 mt-8">
+
+      <button
+        id="prevBtn"
+        class="px-6 py-3 border-2 border-black rounded-lg cursor-pointer transition-all duration-300 hover:bg-black hover:text-white"
+      >
+        Previous
+      </button>
+
+      <button
+        id="nextBtn"
+        class="px-6 py-3 border-2 border-black rounded-lg cursor-pointer transition-all duration-300 hover:bg-black hover:text-white"
+      >
+        Next
+      </button>
+
+    </div>
+
+  </section>
+
+  <script src="./index.js"></script>
+
+</body>
+</html>

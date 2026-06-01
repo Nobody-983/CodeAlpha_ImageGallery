@@ -1,0 +1,19 @@
+
+
+@import "tailwindcss";
+
+
+
+.img {
+  @apply w-full h-64 object-cover rounded-xl shadow-md transition duration-300 hover:scale-105 hover:shadow-xl;
+}
+
+button{
+    @apply px-5 py-2 border-2 border-black rounded-lg cursor-pointer transition-all duration-300 hover:bg-black hover:text-white hover:scale-105
+}
+
+@theme {
+  --breakpoint-sm: 300px;
+--breakpoint-md: 500px;
+--breakpoint-lg: 1360px;
+}
